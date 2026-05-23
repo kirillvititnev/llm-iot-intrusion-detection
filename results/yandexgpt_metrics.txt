@@ -1,0 +1,159 @@
+Random Forest:
+Accuracy: 0.993152611878025
+Precision: 0.8109681071245753
+Recall: 0.7212912579849453
+F1: 0.7313631443216174
+Confusion Matrix: [[   0    1    0 ...    0    0    0]
+ [   0 4762    0 ...    0    0    0]
+ [   0    8    1 ...    0    0    0]
+ ...
+ [   0    1    0 ...    0    0    0]
+ [   0    0    0 ...    0  148    0]
+ [   0    4    0 ...    0    0    0]]
+Classification Report:                          precision    recall  f1-score   support
+
+       Backdoor_Malware       0.00      0.00      0.00        10
+          BenignTraffic       0.87      0.99      0.92      4823
+       BrowserHijacking       1.00      0.04      0.07        27
+       CommandInjection       1.00      0.09      0.16        23
+ DDoS-ACK_Fragmentation       1.00      1.00      1.00      1226
+        DDoS-HTTP_Flood       0.97      0.94      0.95       111
+        DDoS-ICMP_Flood       1.00      1.00      1.00     32088
+DDoS-ICMP_Fragmentation       0.99      1.00      0.99      2046
+      DDoS-PSHACK_Flood       1.00      1.00      1.00     18557
+       DDoS-RSTFINFlood       1.00      1.00      1.00     17887
+         DDoS-SYN_Flood       1.00      1.00      1.00     18542
+         DDoS-SlowLoris       0.78      0.99      0.87        96
+DDoS-SynonymousIP_Flood       1.00      1.00      1.00     16170
+         DDoS-TCP_Flood       1.00      1.00      1.00     20394
+         DDoS-UDP_Flood       1.00      1.00      1.00     24272
+ DDoS-UDP_Fragmentation       0.99      0.99      0.99      1278
+           DNS_Spoofing       0.80      0.69      0.74       764
+   DictionaryBruteForce       1.00      0.19      0.32        57
+         DoS-HTTP_Flood       0.98      0.98      0.98       346
+          DoS-SYN_Flood       1.00      1.00      1.00      9104
+          DoS-TCP_Flood       1.00      1.00      1.00     11848
+          DoS-UDP_Flood       1.00      1.00      1.00     15098
+       MITM-ArpSpoofing       0.90      0.83      0.86      1437
+     Mirai-greeth_flood       1.00      1.00      1.00      4450
+      Mirai-greip_flood       1.00      1.00      1.00      3412
+         Mirai-udpplain       1.00      1.00      1.00      3993
+    Recon-HostDiscovery       0.82      0.82      0.82       609
+           Recon-OSScan       0.80      0.49      0.61       432
+        Recon-PingSweep       0.00      0.00      0.00        10
+         Recon-PortScan       0.80      0.58      0.67       397
+           SqlInjection       0.00      0.00      0.00        33
+       Uploading_Attack       0.00      0.00      0.00         3
+      VulnerabilityScan       0.89      0.94      0.91       157
+                    XSS       0.00      0.00      0.00        15
+
+               accuracy                           0.99    209715
+              macro avg       0.81      0.72      0.73    209715
+           weighted avg       0.99      0.99      0.99    209715
+
+Logistic Regression:
+Accuracy: 0.8452518894690413
+Precision: 0.6407314896925167
+Recall: 0.5203350440386451
+F1: 0.5381051861920377
+Confusion Matrix: [[   0    5    0 ...    0    0    0]
+ [   0 4586    0 ...    0    7    0]
+ [   0   17    0 ...    0    2    0]
+ ...
+ [   0    3    0 ...    0    0    0]
+ [   0  103    0 ...    0   21    0]
+ [   0   11    0 ...    0    0    0]]
+Classification Report:                          precision    recall  f1-score   support
+
+       Backdoor_Malware       0.00      0.00      0.00        10
+          BenignTraffic       0.69      0.95      0.80      4823
+       BrowserHijacking       0.00      0.00      0.00        27
+       CommandInjection       1.00      0.09      0.16        23
+ DDoS-ACK_Fragmentation       0.97      0.98      0.98      1226
+        DDoS-HTTP_Flood       0.61      0.56      0.58       111
+        DDoS-ICMP_Flood       1.00      1.00      1.00     32088
+DDoS-ICMP_Fragmentation       1.00      0.98      0.99      2046
+      DDoS-PSHACK_Flood       1.00      1.00      1.00     18557
+       DDoS-RSTFINFlood       1.00      1.00      1.00     17887
+         DDoS-SYN_Flood       0.67      0.96      0.79     18542
+         DDoS-SlowLoris       0.44      0.19      0.26        96
+DDoS-SynonymousIP_Flood       0.86      0.72      0.78     16170
+         DDoS-TCP_Flood       0.77      0.99      0.86     20394
+         DDoS-UDP_Flood       0.71      0.97      0.82     24272
+ DDoS-UDP_Fragmentation       0.97      0.98      0.97      1278
+           DNS_Spoofing       0.37      0.21      0.27       764
+   DictionaryBruteForce       1.00      0.12      0.22        57
+         DoS-HTTP_Flood       0.87      0.69      0.77       346
+          DoS-SYN_Flood       0.83      0.32      0.47      9104
+          DoS-TCP_Flood       0.95      0.48      0.64     11848
+          DoS-UDP_Flood       0.88      0.35      0.50     15098
+       MITM-ArpSpoofing       0.78      0.52      0.63      1437
+     Mirai-greeth_flood       0.89      0.92      0.90      4450
+      Mirai-greip_flood       0.89      0.84      0.86      3412
+         Mirai-udpplain       0.99      0.99      0.99      3993
+    Recon-HostDiscovery       0.65      0.60      0.63       609
+           Recon-OSScan       0.28      0.06      0.10       432
+        Recon-PingSweep       0.00      0.00      0.00        10
+         Recon-PortScan       0.32      0.08      0.13       397
+           SqlInjection       0.00      0.00      0.00        33
+       Uploading_Attack       0.00      0.00      0.00         3
+      VulnerabilityScan       0.42      0.13      0.20       157
+                    XSS       0.00      0.00      0.00        15
+
+               accuracy                           0.85    209715
+              macro avg       0.64      0.52      0.54    209715
+           weighted avg       0.86      0.85      0.83    209715
+
+Decision Tree:
+Accuracy: 0.9930429392270462
+Precision: 0.8454987477831746
+Recall: 0.8384057659939105
+F1: 0.8398930070134959
+Confusion Matrix: [[   5    2    0 ...    0    0    1]
+ [   1 4423    3 ...    0    0    2]
+ [   0    5   13 ...    0    0    1]
+ ...
+ [   0    1    0 ...    2    0    0]
+ [   0    0    0 ...    0  154    0]
+ [   2    1    0 ...    0    0    9]]
+Classification Report:                          precision    recall  f1-score   support
+
+       Backdoor_Malware       0.38      0.50      0.43        10
+          BenignTraffic       0.91      0.92      0.91      4823
+       BrowserHijacking       0.54      0.48      0.51        27
+       CommandInjection       0.40      0.35      0.37        23
+ DDoS-ACK_Fragmentation       1.00      1.00      1.00      1226
+        DDoS-HTTP_Flood       0.99      0.94      0.96       111
+        DDoS-ICMP_Flood       1.00      1.00      1.00     32088
+DDoS-ICMP_Fragmentation       1.00      1.00      1.00      2046
+      DDoS-PSHACK_Flood       1.00      1.00      1.00     18557
+       DDoS-RSTFINFlood       1.00      1.00      1.00     17887
+         DDoS-SYN_Flood       1.00      1.00      1.00     18542
+         DDoS-SlowLoris       0.92      1.00      0.96        96
+DDoS-SynonymousIP_Flood       1.00      1.00      1.00     16170
+         DDoS-TCP_Flood       1.00      1.00      1.00     20394
+         DDoS-UDP_Flood       1.00      1.00      1.00     24272
+ DDoS-UDP_Fragmentation       1.00      1.00      1.00      1278
+           DNS_Spoofing       0.70      0.70      0.70       764
+   DictionaryBruteForce       0.49      0.49      0.49        57
+         DoS-HTTP_Flood       1.00      1.00      1.00       346
+          DoS-SYN_Flood       1.00      1.00      1.00      9104
+          DoS-TCP_Flood       1.00      1.00      1.00     11848
+          DoS-UDP_Flood       1.00      1.00      1.00     15098
+       MITM-ArpSpoofing       0.84      0.83      0.84      1437
+     Mirai-greeth_flood       1.00      1.00      1.00      4450
+      Mirai-greip_flood       1.00      1.00      1.00      3412
+         Mirai-udpplain       1.00      1.00      1.00      3993
+    Recon-HostDiscovery       0.81      0.81      0.81       609
+           Recon-OSScan       0.58      0.59      0.59       432
+        Recon-PingSweep       0.75      0.60      0.67        10
+         Recon-PortScan       0.64      0.63      0.64       397
+           SqlInjection       0.70      0.42      0.53        33
+       Uploading_Attack       0.67      0.67      0.67         3
+      VulnerabilityScan       0.99      0.98      0.99       157
+                    XSS       0.43      0.60      0.50        15
+
+               accuracy                           0.99    209715
+              macro avg       0.85      0.84      0.84    209715
+           weighted avg       0.99      0.99      0.99    209715
+
